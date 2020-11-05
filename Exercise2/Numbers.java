@@ -21,6 +21,5 @@ public class Numbers {
         this.orangeNumber = n3;
 
         gView.updateGraph(n1, n2, n3);
-        // call method on graphView object to update itself
     }
 }

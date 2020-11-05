@@ -6,7 +6,6 @@ public class NumberView extends JFrame {
 
     public NumberView(int n1, int n2, int n3, Numbers model) {
 
-        // NumberView -> Model -> GraphView
         this.model = model;
 
         add(new JLabel("Red"));

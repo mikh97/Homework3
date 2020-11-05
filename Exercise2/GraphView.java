@@ -10,7 +10,7 @@ public class GraphView extends JFrame {
         this.n1 = n1;
         this.n2 = n2;
         this.n3 = n3;
-        // initialize some variables
+        
         setSize(500, 500);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,16 +20,14 @@ public class GraphView extends JFrame {
         this.n1 = n1;
         this.n2 = n2;
         this.n3 = n3;
-        // update values
         repaint();
     }
 
     @Override
     public void paint(Graphics g) {
-        super.paint(g); // to clear the previous stuff if any (for repainting)
+        super.paint(g);
         Graphics2D g2 = (Graphics2D) g;
 
-        // how to glue it to the bottom? little math here
         int y1 = getHeight() - n1 - 15;
         int y2 = getHeight() - n2 - 15;
         int y3 = getHeight() - n3 - 15;
@@ -48,7 +46,5 @@ public class GraphView extends JFrame {
         Rectangle rec3 = new Rectangle(330, y3, 150, n3 );
         g2.draw(rec3);
         g2.fill(rec3);
-
-        // add two more with different colors
     }
 }
